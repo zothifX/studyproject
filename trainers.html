@@ -85,7 +85,7 @@
       <div class="container professor-cards mt-3" data-aos="fade-up" style="display:inline-flexbox;">
       
         <div class="professor-card">
-          <img class="professor-image" src="/assets/img/marcos.jpg" alt="Marcos">
+          <img class="professor-image" src="assets/img/marcos.jpg" alt="Marcos">
           <div class="professor-info">
             <div class="professor-details">
                 <h3 class="professor-name">Marcos</h3>
@@ -294,7 +294,7 @@
         var professorSubject = professorCard.find('.professor-subject').text();
         var professorRating = professorCard.find('.professor-rating').text();
         var professorPrice = professorCard.find('.professor-price').text();
-        var professorImage = professorCard.find('.professor-image');
+        var professorImage = professorCard.find('.professor-image').clone();
         var professorBio = professorCard.find('.professor-bio').html();
         
         var bioPopup = $('#bioPopup');
