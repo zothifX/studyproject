@@ -85,7 +85,7 @@
       <div class="container professor-cards mt-3" data-aos="fade-up" style="display:inline-flexbox;">
       
         <div class="professor-card">
-          <img class="professor-image" src="assets/img/marcos.jpg" alt="Marcos">
+          <img class="professor-image" src="/assets/img/marcos.jpg" alt="Marcos">
           <div class="professor-info">
             <div class="professor-details">
                 <h3 class="professor-name">Marcos</h3>
@@ -109,6 +109,11 @@
                   <img src="/assets/public/images/chevron-right.svg" alt="Icono de flecha">
                 </a>
             </div>
+          </div>
+          <div class="professor-bio" style="display: none;">
+            <!-- Contenido de la biografía -->
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, nostrum architecto vero adipisci tempore possimus vel accusamus eaque dolorum ipsum pariatur at quisquam, quae, cumque vitae! Odit soluta suscipit nostrum.</p>
+            <button class="contact-button">Contactar</button>
           </div>
         </div>
 
@@ -137,6 +142,11 @@
                 <img src="/assets/public/images/chevron-right.svg" alt="Icono de flecha">
               </a>
             </div>
+          </div>
+          <div class="professor-bio" style="display: none;">
+            <!-- Contenido de la biografía -->
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, nostrum architecto vero adipisci tempore possimus vel accusamus eaque dolorum ipsum pariatur at quisquam, quae, cumque vitae! Odit soluta suscipit nostrum.</p>
+            <button class="contact-button">Contactar</button>
           </div>
         </div>
 
@@ -221,6 +231,23 @@
           </ul>
         </nav>
       </div>
+
+      <div class="bio-popup" id="bioPopup">
+        <div class="popup-content">
+          <span id="closeBioButton" class="close-button">X</span>
+          <div class="professor-image">
+            <img src="assets/img/professor.jpg" alt="Foto del Profesor">
+          </div>
+          <h3 class="professor-name">Nombre del Profesor</h3>
+          <p class="professor-rating">Puntuación: 4.8</p>
+          <p class="professor-subject">Materia</p>
+          <p class="professor-price">Precio: $300</p>
+          <div class="professor-bio-popup">
+            <!-- Aquí se copiará la biografía -->
+          </div>
+        </div>
+      </div>
+
     </section><!-- End Trainers Section -->
 
   </main><!-- End #main -->
@@ -257,6 +284,38 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.professor-card').click(function() {
+        var professorCard = $(this);
+
+        var professorName = professorCard.find('.professor-name').text();
+        var professorSubject = professorCard.find('.professor-subject').text();
+        var professorRating = professorCard.find('.professor-rating').text();
+        var professorPrice = professorCard.find('.professor-price').text();
+        var professorImage = professorCard.find('.professor-image');
+        var professorBio = professorCard.find('.professor-bio').html();
+        
+        var bioPopup = $('#bioPopup');
+        var bioContent = bioPopup.find('.popup-content');
+        var bioPopupBio = bioContent.find('.professor-bio-popup');
+        
+        bioContent.empty();
+        bioContent.append('<span id="closeBioButton" class="close-button"> <img src="/assets/public/images/x.svg" alt ="Icono de X"> </span>');
+        bioContent.append(professorImage);
+        bioContent.append('<div class="professor-infos">' + '<h3 class="professor-names">' + professorName + '</h3>' + '<p class="professor-ratings">' + professorRating + '</p>' + '</div>' + '<div class="professor-infos">' + '<p class="professor-subjects">' + professorSubject + '</p>' + '<p class="professor-prices">' + professorPrice + '</p>' + '</div>');
+        bioContent.append('<h2> Bio </h2>' + '<p>' + professorBio + '</p>');
+        bioContent.append('<div class="social-icons"> <a href="#" class="social-icon"> <img src="/assets/public/images/share.svg" alt="Icono de compartir"> </a> <a href="#" class="social-icon"> <img src="/assets/public/images/calendar-4-week.svg" alt="Icono de calendario"> </a> <a href="#" class="social-icon"> <img src="/assets/public/images/component-2.svg" alt="Icono de corazon"> </a> </div>');
+        
+        bioPopup.fadeIn();
+      });
+
+      $('#bioPopup').on('click', '#closeBioButton', function() {
+        $('#bioPopup').fadeOut();
+      });
+    });
+  </script>
 
 </body>
 
