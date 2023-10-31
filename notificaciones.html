@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<!DOCTYPE html>
-<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
       
-        <title>Study Helper - Chat</title>
+        <title>Study Helper - Notificaciones</title>
         <meta content="" name="description">
         <meta content="" name="keywords">
       
@@ -29,14 +27,14 @@
       
         <!-- Template Main CSS File -->
         <link href="assets/css/style.css" rel="stylesheet">
-
-    </head>
+      
+      </head>
 <body>
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
     
-          <h1 class="logo me-auto"><a href="javascript:history.back();"><img src="assets/img/logo_conTXT.svg" alt="inicio" /></a></h1>
+          <h1 class="logo me-auto"><a href="index.html"><img src="assets/img/logo_conTXT.svg" alt="inicio" /></a></h1>
           
           <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
@@ -44,7 +42,7 @@
               <li><a href="about.html">Acerca Nuestro</a></li>
               <li><a href="courses.html">Cursos</a></li>
               <li><a href="trainers.html">Profesores</a></li>          
-              <li><a class="active" href="chat.html">Chat</a></li>  
+              <li><a href="chat.html">Chat</a></li>  
               <li><a href="contact.html">Contacto</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
@@ -55,52 +53,45 @@
           </a>
         </div>
     </header><!-- End Header -->
-
-    <div class="contacts-container">
+    <div class="notifications-container">
         <div class="top-bar">
-            <a href="index.html" class="back-button"><img src="assets/public/images/chevron-left.svg" alt="Volver"></img></a>
-            <h1 class="notifications-title">Chat</h1>
+            <a href="javascript:history.back();" class="back-button"><img src="assets/public/images/chevron-left.svg" alt="Volver"></img></a>
+            <h1 class="notifications-title">Notificaciones</h1>
         </div>
-        <ul class="contacts-list">
-            <li class="contact">
-            <a href="pantalla-chat.html" class="contact">
-                <img src="assets/img/marcos_face.jpg" alt="Marcos">
-                <div class="contact-info">
-                    <h2>Marcos</h2>
-                    <p>Perfecto! Lo que tenes que preparar nos llevaría, en principio dos clases y lo siguiente:</p>
-                </div>
-            </a>
-            </li>
-            <li class="contact">
-            <a href="pantalla-chat.html" class="contact">
-                <img src="assets/img/rosario.png" alt="Rosario">
-                <div class="contact-info">
-                    <h2>Rosario</h2>
-                    <p>Nuevo mensaje de voz</p>
-                </div>
-            </a>
-            </li>
-            <li class="contact">
-            <a href="pantalla-chat.html" class="contact">
-                <img src="assets/img/lautaro.png" alt="Lautaro">
-                <div class="contact-info">
-                    <h2>Lautaro</h2>
-                    <p>Escribe un mensaje nuevo a Lautaro.</p>
-                </div>
-            </a>
-            </li>
-            <li class="contact">
-            <a href="pantalla-chat.html" class="contact">
-                <img src="assets/img/sofia.jpg" alt="Sofia">
-                <div class="contact-info">
-                    <h2>Sofia</h2>
-                    <p>Escribe un mensaje nuevo a Sofia.</p>
-                </div>
-            </a>
-            </li>
-        </ul>
+        <div class="notification first-notification">
+            <div class="notification-icon">
+                <img src="assets/public/images/calendar-date.svg" alt="Calendario"></img>
+            </div>
+            <div class="notification-content">
+                <p>Hoy tenes una clase con Marcos.</p>
+            </div>
+        </div>
+        <div class="notification">
+            <div class="notification-icon">
+                <img src="assets/public/images/chat-text-fill.svg" alt="Mensaje"></img>
+            </div>
+            <div class="notification-content">
+                <p>Tamara te envio un nuevo mensaje!</p>
+            </div>
+        </div>
+        <div class="notification">
+            <div class="notification-icon">
+                <img src="assets/public/images/check-2-circle.svg" alt="Confirmado"></img>
+            </div>
+            <div class="notification-content">
+                <p>Pagaste 3000$ a Marcos por su clase.</p>
+            </div>
+        </div>
+        <div class="notification">
+            <div class="notification-icon">
+                <img src="assets/public/images/people.svg" alt="Gente"></img>
+            </div>
+            <div class="notification-content">
+                <p>Estos son los temas mas comentados del foro.</p>
+            </div>
+        </div>
     </div>
-      <!-- ======= Footer ======= -->
+  <!-- ======= Footer ======= -->
   <footer id="footer">
 
     <div class="container d-md-flex py-4">

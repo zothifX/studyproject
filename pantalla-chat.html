@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Study Helper - Chat</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html"><img src="assets/img/logo_conTXT.svg" alt="inicio" /></a></h1>
+      
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="about.html">Acerca Nuestro</a></li>
+          <li><a href="courses.html">Cursos</a></li>
+          <li><a href="trainers.html">Profesores</a></li>          
+          <li><a class="active" href="chat.html">Chat</a></li>  
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+     
+    </div>
+    
+  </header><!-- End Header -->
+
+  <main id="main" style="margin-top:110px;">
+    <div class="container" id="chat">
+      <div class="flecha"><a href="javascript:history.back();"><i class="bi bi-chevron-left"></i></a></div>
+      <div class="chat_foto">
+          <img id="professor-picture" src="assets/img/marcos_face.jpg" alt="">
+          <h5 id="professor-name">Marcos</h5>
+          <p class="professor-rating" style="display: none;">★ 4.8</p>
+      </div>
+
+      <div class="amarillo">
+        <h6>11:52</h6>
+        ¡Hola marcos! Tengo que preparar mi parcial de física y necesito ayuda.
+      </div>
+
+      <div class="verde">
+        <h6>11:54</h6>
+        Hola, con gusto te ayudo!      
+      </div>
+
+      <div class="verde">
+        <h6>11:55</h6>
+        Enviame los temas que tengas que preparar y vemos cuantas clasesn nos llevará      </div>
+
+      <div style="text-decoration: underline;" class="amarillo" >
+        <h6>11:57</h6>
+        Lista de temas parcial.pdf   
+        <i class="bi bi-filetype-pdf"></i> 
+      </div>
+
+      <div class="verde budget">
+        <div>
+          <h6>11:54</h6>
+          <p>
+            Perfecto! Lo que tenes que preparar nos llevaría, en principio dos clases y lo siguiente: <br>
+            Dos video llamadas de 1hs cada una <br>
+            Actividades para que puedas practicar <br>
+            El precio por el servicio es de $2000 total. <br>
+            <br>
+            En el calendario puedes ver mis horarios y seleccionar el que mas te sirva. <br>
+            <br>
+            Un placer poder ayudarte!
+          </p>
+        </div>
+        <button class="accept-button">Aceptar</button>
+      </div>
+
+      <div class="clear"></div>
+
+      <div class="formulario">
+        <form action="">
+          <input class="form-control" type="text" value="Escribe tu mensaje aquí" aria-label="Escribe tu mensaje aquí" readonly>
+          <button style="width: auto;" type="submit" value="Enviar" class="btn get-started-btn"> <i class="bi bi-send"></i></button>
+        
+        </form>
+      </div>
+    </div>
+
+    <div class="bio-popup chat-popup" id="bioPopup">
+      <div class="popup-content">
+        <span id="closeBioButton" class="close-button">X</span>
+        <div class="professor-image">
+          <img src="assets/img/professor.jpg" alt="Foto del Profesor">
+        </div>
+        <h3 class="professor-name">Nombre del Profesor</h3>
+        <p class="professor-rating">Puntuación: 4.8</p>
+        <p class="professor-subject">Materia</p>
+        <p class="professor-price">Precio: $300</p>
+      </div>
+    </div>
+
+    
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>c14-44-n-python</span></strong>. All Rights Reserved
+        </div>        
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".accept-button").click(function() {
+        var professorCard = $("#chat");
+  
+        var professorName = professorCard.find('#professor-name').text();
+        var professorRating = professorCard.find('.professor-rating').text();
+        var professorImage = professorCard.find('#professor-picture').clone();
+        
+        var bioPopup = $('#bioPopup');
+        var bioContent = bioPopup.find('.popup-content');
+        var bioPopupBio = bioContent.find('.professor-bio-popup');
+        
+        bioContent.empty();
+        bioContent.append('<span id="closeBioButton" class="close-button"> <img src="/assets/public/images/x.svg" alt ="Icono de X"> </span>');
+        bioContent.append(professorImage);
+        bioContent.append('<div class="professor-infos my-3"> <h3 class="professor-names">' + professorName + '</h3>' + '<p class="professor-ratings">' + professorRating + '</p>' + '</div>' + '<div class="professor-infos">' + '<p class="professor-subjects"> Clases </p>' + '<p class="professor-prices"> 2 </p>' + '</div>');
+        bioContent.append('<div class="professor-infos payment-total my-3"> <p class="professor-name"> Total </p>' + '<p class="professor-prices"> 2000$ </p>' + '</div>');
+        bioContent.append('<div class="professor-infos my-3"> <h7 class="professor-names"> Medio de pago </h7> </div>');
+        bioContent.append('<select name="fruta" id="fruta"> <option value="Visa">Visa Debito *448</option> </select>');
+        bioContent.append('<button class="contact-button">Confirmar</button>');
+        bioPopup.fadeIn();
+      });
+  
+      $('#bioPopup').on('click', '#closeBioButton', function() {
+        $('#bioPopup').fadeOut();
+      });
+    });
+  </script>
+  
+
+</body>
+
+
+</html>
